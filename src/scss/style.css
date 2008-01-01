@@ -1,0 +1,212 @@
+:root {
+  --StrongCyan: hsl(172, 67%, 45%);
+  --VeryDarkCyan: hsl(183, 100%, 15%);
+  --DarkGrayishCyan1: hsl(186, 14%, 43%);
+  --DarkGrayishCyan2: hsl(184, 14%, 56%);
+  --LightGrayishCyan1: hsl(185, 41%, 84%);
+  --LightGrayishCyan2: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+  --formInputFontSize: 24px;
+}
+
+body {
+  background-color: var(--LightGrayishCyan1);
+  height: calc(2 * 100%);
+}
+
+.header {
+  color: var(--DarkGrayishCyan2);
+}
+
+::-webkit-input-placeholder {
+  color: var(--VeryDarkCyan);
+  font-size: var(--formInputFontSize);
+}
+
+:-ms-input-placeholder {
+  color: var(--VeryDarkCyan);
+  font-size: var(--formInputFontSize);
+}
+
+::-ms-input-placeholder {
+  color: var(--VeryDarkCyan);
+  font-size: var(--formInputFontSize);
+}
+
+::placeholder {
+  color: var(--VeryDarkCyan);
+  font-size: var(--formInputFontSize);
+}
+
+.main-container {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .calc-wrapper {
+  background-color: var(--White);
+  border-radius: 0.5rem;
+  height: 100%;
+}
+
+.main-container .calc-wrapper .bill-input {
+  border-radius: 0.3rem;
+  padding: 0.1rem 0;
+}
+
+.main-container .calc-wrapper .bill-input:focus-within {
+  border: 2px solid var(--StrongCyan);
+}
+
+.main-container .calc-wrapper .bill-input-dollar-sign {
+  height: 1rem;
+  margin: auto 0;
+}
+
+.main-container .calc-wrapper .bill-input-amount {
+  max-width: 95%;
+  text-align: right;
+  outline: 0;
+  color: var(--VeryDarkCyan);
+  font-size: var(--formInputFontSize);
+  font-weight: bold;
+}
+
+.main-container .calc-wrapper .tip-percentage-buttons .row {
+  grid-column-gap: 0.4rem;
+}
+
+.main-container .calc-wrapper .tip-percentage-buttons .percent-btn {
+  background-color: var(--VeryDarkCyan);
+  color: var(--White);
+  font-weight: bold;
+  min-width: 7rem;
+}
+
+.main-container .calc-wrapper .tip-percentage-buttons .percent-btn:hover,
+.main-container .calc-wrapper .tip-percentage-buttons .percent-btn:focus {
+  background-color: var(--StrongCyan);
+  color: var(--VeryDarkCyan);
+}
+
+.main-container .calc-wrapper .tip-percentage-buttons #custom-percentage {
+  padding: 0;
+  text-align: right;
+  color: var(--VeryDarkCyan);
+  font-weight: bold;
+  outline: 0;
+  border: none;
+  font-size: var(--formInputFontSize);
+}
+
+.main-container .calc-wrapper .tip-percentage-buttons #custom-percentage:focus {
+  border: 2px solid var(--StrongCyan);
+}
+
+.main-container .calc-wrapper #error {
+  font-weight: bold;
+}
+
+.main-container .calc-wrapper .head-count {
+  border-radius: 0.3rem;
+  padding: 0.1rem 0;
+}
+
+.main-container .calc-wrapper .head-count:focus-within {
+  border: 2px solid var(--StrongCyan);
+}
+
+.main-container .calc-wrapper .head-count .person-icon {
+  height: 1rem;
+  margin: auto 0;
+}
+
+.main-container .calc-wrapper .head-count .number-of-people {
+  width: 95;
+  text-align: right;
+  outline: 0;
+  color: var(--VeryDarkCyan);
+  font-size: var(--formInputFontSize);
+  font-weight: bold;
+}
+
+.main-container .calc-wrapper .tip-output-wrapper {
+  background-color: var(--VeryDarkCyan);
+  border-radius: 0.5rem;
+  position: relative;
+  min-height: 100%;
+}
+
+.main-container .calc-wrapper .tip-output-wrapper .tip-per-person-wrapper {
+  margin-bottom: 10rem;
+}
+
+.main-container .calc-wrapper .tip-output-wrapper .tip-per-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container .calc-wrapper .tip-output-wrapper .tip-per-person p {
+  color: var(--White);
+}
+
+.main-container .calc-wrapper .tip-output-wrapper .tip-per-person p span {
+  color: var(--DarkGrayishCyan2);
+}
+
+.main-container .calc-wrapper .tip-output-wrapper .tip-per-person .amount {
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--StrongCyan);
+}
+
+.main-container .calc-wrapper .tip-output-wrapper #reset {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  outline: none;
+  background-color: var(--StrongCyan);
+  border: none;
+  width: 80%;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--VeryDarkCyan);
+  margin-top: 5rem;
+}
+
+.main-container .calc-wrapper .tip-output-wrapper #reset:hover,
+.main-container .calc-wrapper .tip-output-wrapper #reset:focus {
+  background-color: var(--LightGrayishCyan1);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

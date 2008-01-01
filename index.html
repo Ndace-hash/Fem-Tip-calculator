@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- displays site properly based on user's device -->
+
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./images/favicon-32x32.png"
+        />
+
+        <title>Frontend Mentor | Tip calculator app</title>
+
+        <link rel="stylesheet" href="./src/scss/bootstrap.min.css" />
+        <link rel="stylesheet" href="./src/scss/style.css" />
+    </head>
+    <body>
+        <section class="container main-container">
+            <div class="image-wrapper">
+                <img src="/images/logo.svg" alt="Brand Logo" />
+            </div>
+            <section class="calc-wrapper p-3">
+                <div class="row gap-0">
+                    <div class="col-12 col-lg-6 tip-input-wrapper">
+                        <h5 class="header h5">Bill</h5>
+                        <div
+                            class="
+                                bill-input
+                                d-flex
+                                justify-content-between
+                                px-2
+                                mb-2
+                            "
+                        >
+                            <img
+                                src="/images/icon-dollar.svg"
+                                alt="Dollar Sign"
+                                class="img-fluid bill-input-dollar-sign"
+                            />
+                            <input
+                                type="number"
+                                class="bill-input-amount border-0 p-1"
+                                placeholder="0"
+                            />
+                        </div>
+                        <h5 class="header h5">Select Tip %</h5>
+                        <div
+                            class="
+                                tip-percentage-buttons
+                                mb-2
+                                align-self-center
+                            "
+                        >
+                            <div class="row g-2">
+                                <button
+                                    class="
+                                        btn
+                                        border-0
+                                        percent-btn
+                                        col-5 col-md-4
+                                    "
+                                >
+                                    5%
+                                </button>
+                                <button
+                                    class="
+                                        btn
+                                        border-0
+                                        percent-btn
+                                        col-5 col-md-4
+                                    "
+                                >
+                                    10%
+                                </button>
+                                <button
+                                    class="
+                                        btn
+                                        border-0
+                                        percent-btn
+                                        col-5 col-md-4
+                                    "
+                                >
+                                    15%
+                                </button>
+                                <button
+                                    class="
+                                        btn
+                                        border-0
+                                        percent-btn
+                                        col-5 col-md-4
+                                    "
+                                >
+                                    25%
+                                </button>
+                                <button
+                                    class="
+                                        btn
+                                        border-0
+                                        percent-btn
+                                        col-5 col-md-4
+                                    "
+                                >
+                                    50%
+                                </button>
+                                <input
+                                    type="number"
+                                    name="custom"
+                                    class="btn col-5 col-md-4"
+                                    id="custom-percentage"
+                                    placeholder="Custom"
+                                />
+                            </div>
+                        </div>
+                        <h5 class="header h5 float-start">Number of People</h5>
+                        <p class="text-danger float-end" id="error">
+                            Can't be zero
+                        </p>
+                        <div class="clearfix"></div>
+                        <div
+                            class="
+                                head-count
+                                d-flex
+                                justify-content-between
+                                px-2
+                                mb-2
+                            "
+                        >
+                            <img
+                                src="/images/icon-person.svg"
+                                alt="person icon"
+                                class="img-fluid person-icon"
+                            />
+                            <input
+                                type="number"
+                                class="number-of-people border-0 p-1"
+                                placeholder="1"
+                            />
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 tip-output-wrapper">
+                        <div class="tip-per-person-wrapper">
+                            <div class="tip-per-person">
+                                <p>
+                                    Tip Amount <br />
+                                    <span>/ person</span>
+                                </p>
+                                <div class="amount">
+                                    $
+                                    <span id="tip-amount-per-person">0.00</span>
+                                </div>
+                            </div>
+                            <div class="tip-per-person">
+                                <p>
+                                    Total <br />
+                                    <span>/ person</span>
+                                </p>
+                                <div class="amount">
+                                    $
+                                    <span id="total-amount-per-person"
+                                        >0.00</span
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <button id="reset" class="btn">Reset</button>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <div class="attribution">
+            Challenge by
+            <a
+                href="https://www.frontendmentor.io?ref=challenge"
+                target="_blank"
+                >Frontend Mentor</a
+            >. Coded by <a href="#">Zaccheaus Yisa</a>.
+        </div>
+    </body>
+</html>

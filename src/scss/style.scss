@@ -1,0 +1,171 @@
+:root {
+    --StrongCyan: hsl(172, 67%, 45%);
+
+    --VeryDarkCyan: hsl(183, 100%, 15%);
+    --DarkGrayishCyan1: hsl(186, 14%, 43%);
+    --DarkGrayishCyan2: hsl(184, 14%, 56%);
+    --LightGrayishCyan1: hsl(185, 41%, 84%);
+    --LightGrayishCyan2: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+
+    --formInputFontSize: 24px;
+}
+
+// general styles
+body {
+    background-color: var(--LightGrayishCyan1);
+    height: calc(2 * 100%);
+}
+
+.header {
+    color: var(--DarkGrayishCyan2);
+}
+
+::placeholder {
+    color: var(--VeryDarkCyan);
+    font-size: var(--formInputFontSize);
+}
+
+// section styles
+.main-container {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .calc-wrapper {
+        background-color: var(--White);
+        border-radius: 0.5rem;
+        height: 100%;
+        // min-width: 90%;
+
+        .bill-input {
+            border-radius: 0.3rem;
+            padding: 0.1rem 0;
+            &:focus-within {
+                border: 2px solid var(--StrongCyan);
+            }
+
+            &-dollar-sign {
+                height: 1rem;
+                margin: auto 0;
+            }
+            &-amount {
+                max-width: 95%;
+                text-align: right;
+                outline: 0;
+                color: var(--VeryDarkCyan);
+                font-size: var(--formInputFontSize);
+                font-weight: bold; //change after adding fonts
+            }
+        }
+        .tip-percentage-buttons {
+            .row {
+                grid-column-gap: 0.4rem;
+            }
+            .percent-btn {
+                background-color: var(--VeryDarkCyan);
+                color: var(--White);
+                font-weight: bold; //change after adding fonts
+                min-width: 7rem;
+            }
+            .percent-btn:hover,
+            .percent-btn:focus {
+                background-color: var(--StrongCyan);
+                color: var(--VeryDarkCyan);
+            }
+            #custom-percentage {
+                padding: 0;
+                text-align: right;
+                color: var(--VeryDarkCyan);
+                font-weight: bold; //change after adding fonts
+                outline: 0;
+                border: none;
+                font-size: var(--formInputFontSize);
+                &:focus {
+                    border: 2px solid var(--StrongCyan);
+                }
+            }
+        }
+        #error {
+            font-weight: bold; //change after adding fonts
+        }
+        .head-count {
+            border-radius: 0.3rem;
+            padding: 0.1rem 0;
+            &:focus-within {
+                border: 2px solid var(--StrongCyan);
+            }
+
+            .person-icon {
+                height: 1rem;
+                margin: auto 0;
+            }
+            .number-of-people {
+                width: 95;
+                text-align: right;
+                outline: 0;
+                color: var(--VeryDarkCyan);
+                font-size: var(--formInputFontSize);
+                font-weight: bold; //change after adding fonts
+            }
+        }
+        .tip-output-wrapper {
+            background-color: var(--VeryDarkCyan);
+            border-radius: 0.5rem;
+            position: relative;
+            min-height: 100%;
+
+            .tip-per-person-wrapper {
+                margin-bottom: 10rem;
+            }
+
+            .tip-per-person {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                p {
+                    color: var(--White);
+                    span {
+                        color: var(--DarkGrayishCyan2);
+                    }
+                }
+                .amount {
+                    font-size: 2em;
+                    font-weight: bold; //change after adding fonts
+                    color: var(--StrongCyan);
+                }
+            }
+            #reset {
+                position: absolute;
+                bottom: 2rem;
+                left: 50%;
+                transform: translateX(-50%);
+                outline: none;
+
+                background-color: var(--StrongCyan);
+                border: none;
+                width: 80%;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                font-weight: bold; //change after adding fonts
+                color: var(--VeryDarkCyan);
+                margin-top: 5rem;
+            }
+            #reset:hover,
+            #reset:focus {
+                background-color: var(--LightGrayishCyan1);
+            }
+        }
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
