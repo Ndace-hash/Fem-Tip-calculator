@@ -80,5 +80,5 @@ I also found out that it's okay to scrap all your old work and start all over if
 ## Author
 
 -   Website - [Talk With Zach](https://talkwithzach.netlify.app)
--   Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+-   Frontend Mentor - [@Ndace-hash](https://www.https://www.frontendmentor.io/profile/Ndace-hash)
 -   Twitter - [@Talk_With_Zach](https://www.twitter.com/Talk_With_Zach)
