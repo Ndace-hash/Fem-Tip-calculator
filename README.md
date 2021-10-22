@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![Tip Calculator](./images/tipcalculator.png)
+![Tip Calculator](./images/tipcalculator.PNG)
 
 ### Links
 
 -   Solution URL: [Reepository on Github](https://github.com/Ndace-hash/Fem-Tip-Calculator)
--   Live Site URL: [Github pages](https://your-live-site-url.com)
+-   Live Site URL: [Github pages](https://ndace-hash.github.io/Fem-Tip-calculator/)
 
 ## My process
 
