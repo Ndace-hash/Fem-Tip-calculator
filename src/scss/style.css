@@ -10,6 +10,7 @@
 }
 
 body {
+  font-family: "Space Mono", monospace;
   background-color: var(--LightGrayishCyan1);
   height: calc(2 * 100%);
 }
@@ -61,85 +62,90 @@ body {
   height: 100%;
 }
 
-.main-container .calc-wrapper .bill-input {
+.main-container .calc-wrapper .tip-input-wrapper {
+  margin-bottom: 0.5rem;
+}
+
+.main-container .calc-wrapper .tip-input-wrapper .bill-input {
   border-radius: 0.3rem;
   padding: 0.1rem 0;
 }
 
-.main-container .calc-wrapper .bill-input:focus-within {
+.main-container .calc-wrapper .tip-input-wrapper .bill-input:focus-within {
   border: 2px solid var(--StrongCyan);
 }
 
-.main-container .calc-wrapper .bill-input-dollar-sign {
+.main-container .calc-wrapper .tip-input-wrapper .bill-input-dollar-sign {
   height: 1rem;
   margin: auto 0;
 }
 
-.main-container .calc-wrapper .bill-input-amount {
+.main-container .calc-wrapper .tip-input-wrapper .bill-input-amount {
   max-width: 95%;
   text-align: right;
   outline: 0;
   color: var(--VeryDarkCyan);
   font-size: var(--formInputFontSize);
-  font-weight: bold;
+  font-weight: 700;
 }
 
-.main-container .calc-wrapper .tip-percentage-buttons .row {
+.main-container .calc-wrapper .tip-input-wrapper .tip-percentage-buttons .row {
   grid-column-gap: 0.4rem;
 }
 
-.main-container .calc-wrapper .tip-percentage-buttons .percent-btn {
+.main-container .calc-wrapper .tip-input-wrapper .tip-percentage-buttons .percent-btn {
   background-color: var(--VeryDarkCyan);
   color: var(--White);
-  font-weight: bold;
+  font-weight: 700;
   min-width: 7rem;
 }
 
-.main-container .calc-wrapper .tip-percentage-buttons .percent-btn:hover,
-.main-container .calc-wrapper .tip-percentage-buttons .percent-btn:focus {
+.main-container .calc-wrapper .tip-input-wrapper .tip-percentage-buttons .percent-btn:hover,
+.main-container .calc-wrapper .tip-input-wrapper .tip-percentage-buttons .percent-btn:focus {
   background-color: var(--StrongCyan);
   color: var(--VeryDarkCyan);
 }
 
-.main-container .calc-wrapper .tip-percentage-buttons #custom-percentage {
+.main-container .calc-wrapper .tip-input-wrapper .tip-percentage-buttons #custom-percentage {
   padding: 0;
   text-align: right;
   color: var(--VeryDarkCyan);
-  font-weight: bold;
+  font-weight: 700;
   outline: 0;
   border: none;
   font-size: var(--formInputFontSize);
 }
 
-.main-container .calc-wrapper .tip-percentage-buttons #custom-percentage:focus {
+.main-container .calc-wrapper .tip-input-wrapper .tip-percentage-buttons #custom-percentage:focus {
   border: 2px solid var(--StrongCyan);
 }
 
-.main-container .calc-wrapper #error {
-  font-weight: bold;
+.main-container .calc-wrapper .tip-input-wrapper #error {
+  font-weight: 700;
+  visibility: hidden;
 }
 
-.main-container .calc-wrapper .head-count {
+.main-container .calc-wrapper .tip-input-wrapper .head-count {
   border-radius: 0.3rem;
   padding: 0.1rem 0;
 }
 
-.main-container .calc-wrapper .head-count:focus-within {
+.main-container .calc-wrapper .tip-input-wrapper .head-count:focus-within {
   border: 2px solid var(--StrongCyan);
 }
 
-.main-container .calc-wrapper .head-count .person-icon {
+.main-container .calc-wrapper .tip-input-wrapper .head-count .person-icon {
   height: 1rem;
   margin: auto 0;
 }
 
-.main-container .calc-wrapper .head-count .number-of-people {
+.main-container .calc-wrapper .tip-input-wrapper .head-count .number-of-people {
   width: 95;
   text-align: right;
   outline: 0;
   color: var(--VeryDarkCyan);
   font-size: var(--formInputFontSize);
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .main-container .calc-wrapper .tip-output-wrapper {
@@ -175,7 +181,7 @@ body {
 
 .main-container .calc-wrapper .tip-output-wrapper .tip-per-person .amount {
   font-size: 2em;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--StrongCyan);
 }
 
@@ -191,7 +197,7 @@ body {
   width: 80%;
   font-size: 1.2rem;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 700;
   color: var(--VeryDarkCyan);
   margin-top: 5rem;
 }

@@ -15,6 +15,12 @@
         <title>Frontend Mentor | Tip calculator app</title>
 
         <link rel="stylesheet" href="./src/scss/bootstrap.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="./src/scss/style.css" />
     </head>
     <body>
@@ -43,6 +49,7 @@
                             <input
                                 type="number"
                                 class="bill-input-amount border-0 p-1"
+                                id="bill-amount"
                                 placeholder="0"
                             />
                         </div>
@@ -62,6 +69,8 @@
                                         percent-btn
                                         col-5 col-md-4
                                     "
+                                    data-percentage="5"
+                                    value="5"
                                 >
                                     5%
                                 </button>
@@ -72,6 +81,8 @@
                                         percent-btn
                                         col-5 col-md-4
                                     "
+                                    data-percentage="10"
+                                    value="10"
                                 >
                                     10%
                                 </button>
@@ -82,6 +93,8 @@
                                         percent-btn
                                         col-5 col-md-4
                                     "
+                                    data-percentage="15"
+                                    value="15"
                                 >
                                     15%
                                 </button>
@@ -92,6 +105,8 @@
                                         percent-btn
                                         col-5 col-md-4
                                     "
+                                    data-percentage="25"
+                                    value="25"
                                 >
                                     25%
                                 </button>
@@ -102,6 +117,9 @@
                                         percent-btn
                                         col-5 col-md-4
                                     "
+                                    data-percentage="50"
+                                    value="50"
+                                    type=""
                                 >
                                     50%
                                 </button>
@@ -136,6 +154,7 @@
                             <input
                                 type="number"
                                 class="number-of-people border-0 p-1"
+                                id="number-of-persons"
                                 placeholder="1"
                             />
                         </div>
@@ -165,7 +184,9 @@
                                 </div>
                             </div>
                         </div>
-                        <button id="reset" class="btn">Reset</button>
+                        <button id="reset" type="reset" class="btn">
+                            Reset
+                        </button>
                     </div>
                 </div>
             </section>
@@ -177,7 +198,10 @@
                 href="https://www.frontendmentor.io?ref=challenge"
                 target="_blank"
                 >Frontend Mentor</a
-            >. Coded by <a href="#">Zaccheaus Yisa</a>.
+            >. Coded by
+            <a href="https://github.com/Ndace-hash">Zaccheaus Yisa</a>.
         </div>
+
+        <script src="/src/js/index.js"></script>
     </body>
 </html>

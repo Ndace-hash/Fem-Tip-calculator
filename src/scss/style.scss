@@ -13,6 +13,7 @@
 
 // general styles
 body {
+    font-family: "Space Mono", monospace;
     background-color: var(--LightGrayishCyan1);
     height: calc(2 * 100%);
 }
@@ -39,76 +40,79 @@ body {
         border-radius: 0.5rem;
         height: 100%;
         // min-width: 90%;
-
-        .bill-input {
-            border-radius: 0.3rem;
-            padding: 0.1rem 0;
-            &:focus-within {
-                border: 2px solid var(--StrongCyan);
-            }
-
-            &-dollar-sign {
-                height: 1rem;
-                margin: auto 0;
-            }
-            &-amount {
-                max-width: 95%;
-                text-align: right;
-                outline: 0;
-                color: var(--VeryDarkCyan);
-                font-size: var(--formInputFontSize);
-                font-weight: bold; //change after adding fonts
-            }
-        }
-        .tip-percentage-buttons {
-            .row {
-                grid-column-gap: 0.4rem;
-            }
-            .percent-btn {
-                background-color: var(--VeryDarkCyan);
-                color: var(--White);
-                font-weight: bold; //change after adding fonts
-                min-width: 7rem;
-            }
-            .percent-btn:hover,
-            .percent-btn:focus {
-                background-color: var(--StrongCyan);
-                color: var(--VeryDarkCyan);
-            }
-            #custom-percentage {
-                padding: 0;
-                text-align: right;
-                color: var(--VeryDarkCyan);
-                font-weight: bold; //change after adding fonts
-                outline: 0;
-                border: none;
-                font-size: var(--formInputFontSize);
-                &:focus {
+        .tip-input-wrapper {
+            margin-bottom: 0.5rem;
+            .bill-input {
+                border-radius: 0.3rem;
+                padding: 0.1rem 0;
+                &:focus-within {
                     border: 2px solid var(--StrongCyan);
                 }
-            }
-        }
-        #error {
-            font-weight: bold; //change after adding fonts
-        }
-        .head-count {
-            border-radius: 0.3rem;
-            padding: 0.1rem 0;
-            &:focus-within {
-                border: 2px solid var(--StrongCyan);
-            }
 
-            .person-icon {
-                height: 1rem;
-                margin: auto 0;
+                &-dollar-sign {
+                    height: 1rem;
+                    margin: auto 0;
+                }
+                &-amount {
+                    max-width: 95%;
+                    text-align: right;
+                    outline: 0;
+                    color: var(--VeryDarkCyan);
+                    font-size: var(--formInputFontSize);
+                    font-weight: 700;
+                }
             }
-            .number-of-people {
-                width: 95;
-                text-align: right;
-                outline: 0;
-                color: var(--VeryDarkCyan);
-                font-size: var(--formInputFontSize);
-                font-weight: bold; //change after adding fonts
+            .tip-percentage-buttons {
+                .row {
+                    grid-column-gap: 0.4rem;
+                }
+                .percent-btn {
+                    background-color: var(--VeryDarkCyan);
+                    color: var(--White);
+                    font-weight: 700;
+                    min-width: 7rem;
+                }
+                .percent-btn:hover,
+                .percent-btn:focus {
+                    background-color: var(--StrongCyan);
+                    color: var(--VeryDarkCyan);
+                }
+                #custom-percentage {
+                    padding: 0;
+                    text-align: right;
+                    color: var(--VeryDarkCyan);
+                    font-weight: 700;
+                    outline: 0;
+                    border: none;
+                    font-size: var(--formInputFontSize);
+                    &:focus {
+                        border: 2px solid var(--StrongCyan);
+                    }
+                }
+            }
+            #error {
+                font-weight: 700;
+                visibility: hidden;
+            }
+            .head-count {
+                border-radius: 0.3rem;
+                padding: 0.1rem 0;
+                &:focus-within {
+                    border: 2px solid var(--StrongCyan);
+                }
+
+                .person-icon {
+                    height: 1rem;
+                    margin: auto 0;
+                }
+                .number-of-people {
+                    width: 95;
+                    text-align: right;
+                    outline: 0;
+                    color: var(--VeryDarkCyan);
+                    font-size: var(--formInputFontSize);
+                    font-weight: 700;
+                }
             }
         }
         .tip-output-wrapper {
@@ -133,7 +137,7 @@ body {
                 }
                 .amount {
                     font-size: 2em;
-                    font-weight: bold; //change after adding fonts
+                    font-weight: 700;
                     color: var(--StrongCyan);
                 }
             }
@@ -149,7 +153,7 @@ body {
                 width: 80%;
                 font-size: 1.2rem;
                 text-transform: uppercase;
-                font-weight: bold; //change after adding fonts
+                font-weight: 700;
                 color: var(--VeryDarkCyan);
                 margin-top: 5rem;
             }
